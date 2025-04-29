@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Password Generator{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Password Generator</h1>
+    <label for="gen-length">Password Length:</label>
+    <input type="range" id="gen-length" value="12" min="8" max="32" oninput="updateLengthDisplay()">
+    <span id="gen-length-display">12</span>
+    <br>
+    <label>
+        Include Special Characters <input type="checkbox" id="include-special" checked>
+    </label>
+    <button class="btn" onclick="generatePassword()">Generate Password</button>
+    <p id="generated-password"></p>
+</div>
+{% endblock %}

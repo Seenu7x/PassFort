@@ -1,0 +1,135 @@
+/* General Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    z-index: 1000;
+}
+
+.nav-about {
+    margin-left: auto;
+    padding-right: 50px;
+
+}
+
+.nav-items {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px; /* Adjusted for fixed navbar */
+    margin-top: 60px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    color:#fff;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.footer a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Strength Bar Styling */
+#strength-bar {
+    height: 15px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Light background for the bar */
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+#strength-fill {
+    height: 100%;
+    width: 0%; /* Default width is 0% */
+    background-color: red; /* Default color for Weak */
+    transition: width 0.5s ease, background-color 0.5s ease; /* Smooth transitions for both width and color */
+}
+/* Buttons */
+.btn {
+    background: #ff6f61;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background: #ff3c3c;
+    box-shadow: 0 4px 15px rgba(255, 60, 60, 0.4);
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 15px 0;
+    background: rgba(255, 255, 255, 0.184);
+    color: #f9f5f5;
+    
+}
+input::placeholder {
+    color: #ffffff; /* White text color */
+    font-style: italic; /* Optional: Add a style like italics */
+    opacity: 0.8; /* Adjust visibility (0.1 to 1) */
+}

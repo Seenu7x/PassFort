@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Password Strength Checker{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Password Strength Checker</h1>
+    <input type="password" id="password" placeholder="Enter your password" onkeyup="checkPasswordLive()">
+    <div id="strength-bar">
+        <div id="strength-fill"></div>
+    </div>
+    <p id="strength-result"></p>
+    <p id="dictionary-result"></p>
+    <button class="btn" onclick="checkBreach()">Check Breach</button>
+    <p id="breach-result"></p>
+</div>
+{% endblock %}

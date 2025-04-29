@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PassFort{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-items">
+                <a href="/" class="nav-item">Password Checker</a>
+                <a href="/generator" class="nav-item">Password Generator</a>
+            </div>
+            <div class="nav-about">
+                <a href="/about" class="nav-item">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Contact: 
+            <a href="https://github.com/seenu7x" target="_blank">GitHub</a> | 
+            <a href="https://www.linkedin.com/in/siva-seenu-874258257" target="_blank">LinkedIn</a> |
+            <a href="sivaseenu128@gmail.com">sivaseenu128@gmail.com</a>
+        </p>
+    </footer>
+</body>
+</html>
